@@ -1,0 +1,30 @@
+# DataAccessHub Production Dependencies
+
+# Core Django
+Django==4.2.7
+djangorestframework==3.14.0
+djangorestframework-simplejwt==5.2.2
+
+# API Documentation
+drf-yasg==1.21.7
+
+# Database (PostgreSQL for production)
+psycopg2-binary==2.9.7
+
+# Security
+cryptography==41.0.4
+
+# Environment management
+python-decouple==3.8
+
+# Production server
+gunicorn==21.2.0
+
+# Static files
+whitenoise==6.5.0
+
+# Monitoring
+sentry-sdk==1.32.0
+
+# Development tools (optional)
+django-debug-toolbar==4.2.0
