@@ -563,32 +563,6 @@ npm run test:e2e
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
-## Support and Contact
-
-- Email: support@dataaccesshub.com
-- Documentation: [docs.dataaccesshub.com](https://docs.dataaccesshub.com)
-- Issue Reporting: [GitHub Issues](https://github.com/your-org/DataAccessHub/issues)
-- Discussions: [GitHub Discussions](https://github.com/your-org/DataAccessHub/discussions)
-
-## Development Roadmap
-
-### Short-term Plans (1-2 weeks)
-- [ ] Mobile Interface Optimization
-- [ ] Real-time Notification System
-- [ ] Enhanced Bulk Operations
-
-### Medium-term Plans (1-2 months)
-- [ ] SSO Single Sign-On Integration
-- [ ] Third-party System API Integration
-- [ ] AI-driven Approval Suggestions
-
-### Long-term Planning (3-6 months)
-- [ ] Microservices Architecture Migration
-- [ ] Cloud-native Deployment Support
-- [ ] Data Lineage Tracking
-
----
-
 **Thank you for using DataAccessHub!**
 
 If this project helps you, please give us a star on GitHub.
