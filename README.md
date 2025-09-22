@@ -1,4 +1,4 @@
-# 🚀 DataAccessHub - Enterprise Data Access Permission Management Platform
+# DataAccessHub - Institutional Data Governance Platform
 
 [![Django](https://img.shields.io/badge/Django-4.2.7-092E20?style=flat&logo=django)](https://djangoproject.com/)
 [![Next.js](https://img.shields.io/badge/Next.js-14-000000?style=flat&logo=next.js)](https://nextjs.org/)
@@ -6,11 +6,11 @@
 [![JWT](https://img.shields.io/badge/JWT-Auth-000000?style=flat&logo=jsonwebtokens)](https://jwt.io/)
 [![Status](https://img.shields.io/badge/Status-Production%20Ready-success)](https://github.com)
 
-> **A modern enterprise-grade data access permission management platform providing field-level permission control, multi-tenant support, and complete approval workflows**
+DataAccessHub is a comprehensive institutional data governance platform designed to provide centralized control over institutional data assets. The platform enables organizations to manage data access permissions, enforce data governance policies, maintain compliance, and ensure responsible data usage across research institutions, universities, and enterprise environments.
 
 Note: Backend now runs in API-only mode (no Django server-rendered pages). Use the Next.js frontend for UI and call the REST API under `/api/v1`.
 
-## 📁 Complete Project Structure
+## Complete Project Structure
 
 ```
 DataAccessHub/
@@ -222,22 +222,22 @@ DataAccessHub/
 └── requirements.txt                   # Python Backend Dependency Package List
 ```
 
-## 📋 Project Overview
+## Project Overview
 
-DataAccessHub is a complete data access permission management solution designed for enterprise environments. It provides fine-grained data access control, flexible approval workflows, and powerful multi-tenant architecture.
+DataAccessHub is a comprehensive institutional data governance platform built to address the complex data management needs of research institutions, universities, and enterprise organizations. The platform provides centralized governance over institutional data assets while ensuring compliance with regulatory requirements and institutional policies.
 
-### ✨ Core Features
+### Core Features
 
-- 🔐 **JWT Authentication System** - Token-based secure authentication
-- 🛡️ **Field-level Permission Control** - Precise access control down to database fields
-- 📝 **Flexible Approval Workflows** - Configurable multi-level approval processes
-- 🏢 **Multi-tenant Architecture** - Support for multi-organization data isolation
-- 📊 **Real-time Dashboard** - Modern data visualization interface
-- 🔍 **Full-chain Auditing** - Complete operation log tracking
-- 🚀 **REST API** - Complete RESTful API interfaces
-- 📱 **Responsive UI** - Modern frontend based on Next.js
+- **JWT Authentication System** - Token-based secure authentication with institutional identity management
+- **Field-level Permission Control** - Granular access control policies at the database field level
+- **Configurable Approval Workflows** - Multi-stage approval processes tailored to institutional hierarchies
+- **Multi-tenant Architecture** - Complete data isolation for different departments, projects, or institutions
+- **Compliance Dashboard** - Real-time monitoring of data governance metrics and policy adherence
+- **Comprehensive Audit Trail** - Complete tracking of all data access and governance activities
+- **REST API** - Programmatic access for integration with institutional systems
+- **Modern Web Interface** - Responsive user interface built with Next.js for administrative and end-user interactions
 
-## 🎯 Quick Start
+## Quick Start
 
 ### Environment Requirements
 
@@ -245,7 +245,7 @@ DataAccessHub is a complete data access permission management solution designed 
 - Node.js 18+
 - SQLite (development) / PostgreSQL (production)
 
-### 🔧 Installation Steps
+### Installation Steps
 
 1. **Clone Project**
    ```bash
@@ -294,7 +294,7 @@ Run both apps with one command on common dev ports:
 ```bash
 ./start_up.sh                # backend :8003, frontend :3003
 # Custom ports
-./start_up.sh --backend 8001 --frontend 3001
+./start_up.sh --backend 8003 --frontend 3003
 # If ports are busy
 ./start_up.sh --force
 # Reset DB and reseed (fresh start)
@@ -342,7 +342,7 @@ Seeding initial data
 Notes for macOS + Python 3.13
 - If installing `psycopg2-binary` fails, use `requirements-dev.txt` (already used by `start_up.sh`). Production can use PostgreSQL with `requirements.txt`.
 
-## 🏗️ Technical Architecture
+## Technical Architecture
 
 ### Backend Technology Stack
 
@@ -381,7 +381,7 @@ Axios                          // HTTP Client
 js-cookie                      // Cookie Management
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 DataAccessHub/
@@ -409,7 +409,7 @@ DataAccessHub/
 └── docs/                     # Project Documentation
 ```
 
-## 🔌 API Interfaces
+## API Interfaces
 
 ### Authentication Interfaces
 ```bash
@@ -441,7 +441,7 @@ GET    /api/v1/permissions/user-roles/       # User Roles
 GET    /api/v1/permissions/permissions/      # Permission Management
 ```
 
-## 🔒 Security Features
+## Security Features
 
 ### Authentication and Authorization
 - JWT Token Authentication
@@ -461,7 +461,7 @@ GET    /api/v1/permissions/permissions/      # Permission Management
 - API Access Monitoring
 - Exception Detection and Alerting
 
-## 🎨 User Interface
+## User Interface
 
 ### Dashboard
 - Real-time System Status Monitoring
@@ -481,7 +481,7 @@ GET    /api/v1/permissions/permissions/      # Permission Management
 - User Permission Overview
 - Bulk Permission Assignment
 
-## 🚀 Deployment Guide
+## Deployment Guide
 
 ### Docker Deployment
 
@@ -490,9 +490,9 @@ GET    /api/v1/permissions/permissions/      # Permission Management
 docker-compose up -d
 
 # Access Application
-# Frontend: http://localhost:3000
-# Backend: http://localhost:8000
-# API Documentation: http://localhost:8000/swagger/
+# Frontend: http://localhost:3003
+# Backend: http://localhost:8003
+# API Documentation: http://localhost:8003/swagger/
 ```
 
 ### Production Environment Configuration
@@ -517,17 +517,17 @@ docker-compose up -d
    certbot --nginx -d your-domain.com
    ```
 
-## 📊 Test Verification
+## Test Verification
 
 ### Functional Test Matrix
 
 | Function Module | Test Status | Coverage |
 |---------|---------|--------|
-| JWT Authentication | ✅ Passed | 100% |
-| API Permission Control | ✅ Passed | 100% |
-| Approval Workflow | ✅ Passed | 95% |
-| Multi-tenant Isolation | ✅ Passed | 90% |
-| Frontend Interface | ✅ Passed | 100% |
+| JWT Authentication | Passed | 100% |
+| API Permission Control | Passed | 100% |
+| Approval Workflow | Passed | 95% |
+| Multi-tenant Isolation | Passed | 90% |
+| Frontend Interface | Passed | 100% |
 
 ### Running Tests
 
@@ -544,14 +544,14 @@ npm run test
 npm run test:e2e
 ```
 
-## 📈 Performance Metrics
+## Performance Metrics
 
 - **API Response Time**: <200ms (95th percentile)
 - **Database Queries**: Optimized indexing, supports millions of records
 - **Concurrent Users**: Supports 1000+ concurrent users
 - **System Availability**: 99.9%+
 
-## 🤝 Contributing Guide
+## Contributing Guide
 
 1. Fork the project
 2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
@@ -559,18 +559,18 @@ npm run test:e2e
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
-## 📞 Support and Contact
+## Support and Contact
 
-- 📧 Email: support@dataaccesshub.com
-- 📖 Documentation: [docs.dataaccesshub.com](https://docs.dataaccesshub.com)
-- 🐛 Issue Reporting: [GitHub Issues](https://github.com/your-org/DataAccessHub/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/your-org/DataAccessHub/discussions)
+- Email: support@dataaccesshub.com
+- Documentation: [docs.dataaccesshub.com](https://docs.dataaccesshub.com)
+- Issue Reporting: [GitHub Issues](https://github.com/your-org/DataAccessHub/issues)
+- Discussions: [GitHub Discussions](https://github.com/your-org/DataAccessHub/discussions)
 
-## 🗺️ Development Roadmap
+## Development Roadmap
 
 ### Short-term Plans (1-2 weeks)
 - [ ] Mobile Interface Optimization
@@ -589,7 +589,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-<div align="center">
-  <p><strong>🎉 Thank you for using DataAccessHub!</strong></p>
-  <p>If this project helps you, please give us a ⭐️</p>
-</div>
+**Thank you for using DataAccessHub!**
+
+If this project helps you, please give us a star on GitHub.
